@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginEnd="50dp">
+
+                <TextView
+                    android:id="@+id/dish_name_text_view_list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:elevation="1dp"
+                    android:text="@string/list_adapter_dish_name"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/dish_amount_text_view_list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:elevation="1dp"
+                    android:lines="1"
+                    android:text="@string/amount"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/dish_units_text_view_list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.45"
+                    android:elevation="1dp"
+                    android:lines="1"
+                    android:text="@string/units"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/delete_dish_list_item"
+                android:clickable="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_action_remove"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/calories_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="@string/calories"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/protein_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="@string/proteins"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/fats_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="@string/fats"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/carbohydrates_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="@string/carbohydrates"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
